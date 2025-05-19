@@ -3,7 +3,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>io.github.juoliii</groupId>
     <artifactId>bt-security</artifactId>
-    <version>1.0.2</version>
+    <version>1.0.3</version>
     <packaging>jar</packaging>
     <name>Archetype - bt-security</name>
     <description>bt-security</description>
@@ -14,14 +14,18 @@
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
-            <version>2.7.6</version>
             <scope>provided</scope>
         </dependency>
 
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-security</artifactId>
-            <version>2.7.6</version>
+            <scope>provided</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-data-redis</artifactId>
             <scope>provided</scope>
         </dependency>
 
@@ -41,7 +45,7 @@
         <dependency>
             <groupId>io.github.juoliii</groupId>
             <artifactId>common</artifactId>
-            <version>0.2.4</version>
+            <version>0.2.10</version>
         </dependency>
 
         <dependency>
