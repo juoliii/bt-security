@@ -34,7 +34,6 @@ public class CorsConfig{
 
     @Bean
     public FilterRegistrationBean<CorsFilter> corsFilter() {
-        System.out.println("========"+path);
         UrlBasedCorsConfigurationSource source = new UrlBasedCorsConfigurationSource();
         source.registerCorsConfiguration(path, corsConfig());
         FilterRegistrationBean<CorsFilter> bean = new FilterRegistrationBean<>(new CorsFilter(source));
